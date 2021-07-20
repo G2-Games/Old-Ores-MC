@@ -8,5 +8,8 @@ The changes it makes to the game are:
 - Reverts deepslate variants
 - Changes copper to a custom texture that I think fits with the old ores
 
+## Texture Showcase
+![Showcase](https://g2games.dev/Assets/hosted_files/mc/showcase.png)
+
 ## Compatibility
 This pack is compatible with 1.17.x for now. It will be updated as Minecraft is updated.
