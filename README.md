@@ -1,8 +1,11 @@
 # Old Ores
 
+**This texture pack is also available for download from [Curseforge](https://www.curseforge.com/minecraft/texture-packs/old-ores-copper/)**
+
 ## What is this pack for?
-- Reverts all ores to the pre-1.17 textures
-- Also changes the deepslate variants
+The changes it makes to the game are:
+- Reverts all ore textures to pre-1.17
+- Reverts deepslate variants
 - Changes copper to a custom texture that I think fits with the old ores
 
 ## Compatibility
