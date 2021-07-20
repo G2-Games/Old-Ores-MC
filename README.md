@@ -1,7 +1,7 @@
 # Old Ores
 
 ## Where to download
-Download latest file from the **[Releases](https://github.com/G2-Games/Old-Ores-MC)** \
+Download latest file from the **[Releases](https://github.com/G2-Games/Old-Ores-MC/releases)** \
 Also available for download from **[Curseforge](https://www.curseforge.com/minecraft/texture-packs/old-ores-copper/)**. The bedrock version is not available from there.
 
 ## What is this pack for?
