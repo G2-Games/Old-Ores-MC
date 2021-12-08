@@ -2,7 +2,7 @@
 
 ## Where to download
 Download latest file from the **[Releases](https://github.com/G2-Games/Old-Ores-MC/releases)** \
-Also available for download from **[Curseforge](https://www.curseforge.com/minecraft/texture-packs/old-ores-copper/)**. The bedrock version is not available from there.
+Also available for download from **[Curseforge](https://www.curseforge.com/minecraft/texture-packs/old-ores-copper/)**.
 
 ## What is this pack for?
 The changes it makes to the game are:
