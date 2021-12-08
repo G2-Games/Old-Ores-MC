@@ -14,4 +14,4 @@ The changes it makes to the game are:
 ![Showcase](https://g2games.dev/Assets/hosted_files/mc/showcase.png)
 
 ## Compatibility
-This pack is compatible with 1.17.x for now. It will be updated as Minecraft is updated.
+This pack is compatible with 1.17.x and up for now. It will be updated as Minecraft is updated.
