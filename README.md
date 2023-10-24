@@ -5,7 +5,7 @@
 Download latest file from the **[Releases](https://github.com/G2-Games/Old-Ores-MC/releases)**
 
 ### Other
-Also available for download from **[Curseforge](https://www.curseforge.com/minecraft/texture-packs/old-ores-copper/)**, **[Modrinth](https://modrinth.com/resourcepack/old-ore-textures-(with-copper\))**, and **[Planet Minecraft](https://www.planetminecraft.com/texture-pack/old-ore-textures-pre-1-17-includes-copper/)**.
+Also available for download from **[Curseforge](https://www.curseforge.com/minecraft/texture-packs/old-ores-copper/)**, **[Modrinth](https://modrinth.com/resourcepack/old-ore-textures-(with-copper))**, and **[Planet Minecraft](https://www.planetminecraft.com/texture-pack/old-ore-textures-pre-1-17-includes-copper/)**.
 
 ## What is this pack for?
 The changes it makes to the game are:
