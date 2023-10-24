@@ -1,8 +1,11 @@
 # Old Ores
 
 ## Where to download
-Download latest file from the **[Releases](https://github.com/G2-Games/Old-Ores-MC/releases)** \
-Also available for download from **[Curseforge](https://www.curseforge.com/minecraft/texture-packs/old-ores-copper/)** and **[Modrinth](https://modrinth.com/resourcepack/old-ore-textures-(with-copper))**.
+### Recommended
+Download latest file from the **[Releases](https://github.com/G2-Games/Old-Ores-MC/releases)**
+
+### Other
+Also available for download from **[Curseforge](https://www.curseforge.com/minecraft/texture-packs/old-ores-copper/)**, **[Modrinth](https://modrinth.com/resourcepack/old-ore-textures-(with-copper\))**, and **[Planet Minecraft](https://www.planetminecraft.com/texture-pack/old-ore-textures-pre-1-17-includes-copper/)**.
 
 ## What is this pack for?
 The changes it makes to the game are:
@@ -11,7 +14,8 @@ The changes it makes to the game are:
 - Changes copper to a custom texture that I think fits with the old ores
 
 ## Texture Showcase
-![Showcase](https://g2games.dev/Assets/hosted_files/mc/showcase.png)
+![Showcase 1](images/ores.webp)
+![Showcase 2](https://g2games.dev/Assets/hosted_files/mc/showcase.png)
 
 ## Compatibility
 This pack is compatible with 1.17.x and up for now. It will be updated as Minecraft is updated.
