@@ -14,8 +14,12 @@ The changes it makes to the game are:
 - Changes copper to a custom texture that I think fits with the old ores
 
 ## Texture Showcase
-![Showcase 1](images/ores.webp)
-![Showcase 2](https://g2games.dev/Assets/hosted_files/mc/showcase.png)
+<p align="center">
+    <img src="https://g2games.dev/Assets/hosted_files/mc/ores.webp" />
+</p>
+<p align="center">
+    <img src="https://g2games.dev/Assets/hosted_files/mc/showcase.png" />
+</p>
 
 ## Compatibility
 This pack is compatible with 1.17.x and up for now. It will be updated as Minecraft is updated.
