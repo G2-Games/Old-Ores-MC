@@ -15,9 +15,6 @@ The changes it makes to the game are:
 
 ## Texture Showcase
 <p align="center">
-    <img src="https://g2games.dev/Assets/hosted_files/mc/ores.webp" />
-</p>
-<p align="center">
     <img src="https://g2games.dev/Assets/hosted_files/mc/showcase.png" />
 </p>
 
