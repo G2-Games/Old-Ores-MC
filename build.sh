@@ -1,5 +1,5 @@
 #!/bin/bash
-version="2.1.2"
+version="2.1.3"
 
 # Inputs:
 #   1: Base layer
@@ -47,6 +47,21 @@ overlay_on "../textures/stones/deepslate_top.png" "deepslate_" "_top" "coal.png"
 echo "Packaging"
 
 7z a -tzip "Old.Ores.$version-Java.zip" -w ./java/* > /dev/null
-#7z a -tzip "Old.Ores.$version-Bedrock.mcpack" ../Bedrock/*
+
+echo -e "\n---\nBuilding Bedrock"
+
+# Create Bedrock directory structure
+mkdir -p ./bedrock/textures/blocks/deepslate/
+
+echo "Copying Bedrock metafiles"
+cp "../src/manifest.json" "./bedrock/manifest.json"
+cp "../src/pack_icon.png" "./bedrock/pack_icon.png"
+
+echo "Overlaying textures"
+overlay_on "../textures/stones/ore_stone.png" "" "" "coal_deepslate.png" "" "./bedrock/textures/blocks/"
+overlay_on "../textures/stones/deepslate.png" "deepslate_" "" "coal.png" "_deepslate" "./bedrock/textures/blocks/deepslate/"
+#overlay_on "../textures/stones/deepslate_top.png" "deepslate_" "_top" "coal.png" "_deepslate" "./java/assets/minecraft/textures/block/"
+
+7z a -tzip "Old.Ores.$version-Bedrock.zip" -w ./bedrock/* > /dev/null
 
 cd "$currentdir" || exit 1
