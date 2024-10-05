@@ -64,6 +64,6 @@ overlay_on "../textures/stones/deepslate.png" "deepslate_" "" "coal.png" "_deeps
 
 echo "Packaging"
 
-7z a -tzip "Old.Ores.$version-Bedrock.zip" -w ./bedrock/* > /dev/null
+7z a -tzip "Old.Ores.$version-Bedrock.mcpack" -w ./bedrock/* > /dev/null
 
 cd "$currentdir" || exit 1
