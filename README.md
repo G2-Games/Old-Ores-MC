@@ -15,7 +15,7 @@ The changes it makes to the game are:
 
 ## Texture Showcase
 <p align="center">
-    <img src="https://g2games.dev/Assets/hosted_files/mc/showcase.png" />
+    <img src="https://github.com/user-attachments/assets/50587777-bb85-4442-858a-9a649f2d766e" />
 </p>
 
 ## Compatibility
