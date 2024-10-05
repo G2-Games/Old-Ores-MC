@@ -17,7 +17,7 @@ overlay_on() {
         fi
 
         file_basename=${file_basename//"$5"/}
-        magick "$1" "$file" -gravity center -composite "$6/$2${file_basename%.*}_ore$3.png"
+        magick "$1" "$file" -gravity center -composite PNG8:"$6/$2${file_basename%.*}_ore$3.png"
     done
 }
 
@@ -61,6 +61,8 @@ echo "Overlaying textures"
 overlay_on "../textures/stones/ore_stone.png" "" "" "coal_deepslate.png" "" "./bedrock/textures/blocks/"
 overlay_on "../textures/stones/deepslate.png" "deepslate_" "" "coal.png" "_deepslate" "./bedrock/textures/blocks/deepslate/"
 #overlay_on "../textures/stones/deepslate_top.png" "deepslate_" "_top" "coal.png" "_deepslate" "./java/assets/minecraft/textures/block/"
+
+echo "Packaging"
 
 7z a -tzip "Old.Ores.$version-Bedrock.zip" -w ./bedrock/* > /dev/null
 
