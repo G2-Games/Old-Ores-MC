@@ -44,7 +44,7 @@ overlay_on "../textures/stones/ore_stone.png" "" "" "coal_deepslate.png" "" "./j
 overlay_on "../textures/stones/deepslate.png" "deepslate_" "" "coal.png" "_deepslate" "./java/assets/minecraft/textures/block/"
 overlay_on "../textures/stones/deepslate_top.png" "deepslate_" "_top" "coal.png" "_deepslate" "./java/assets/minecraft/textures/block/"
 
-7z a -tzip "Old.Ores.$version-Java.zip" ../Java/*
-7z a -tzip "Old.Ores.$version-Bedrock.mcpack" ../Bedrock/*
+zip -r "Old.Ores.$version-Java.zip" ./java/*
+#7z a -tzip "Old.Ores.$version-Bedrock.mcpack" ../Bedrock/*
 
 cd "$currentdir" || exit 1
