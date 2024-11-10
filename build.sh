@@ -17,7 +17,7 @@ overlay_on() {
         fi
 
         file_basename=${file_basename//"$5"/}
-        magick "$1" "$file" -gravity center -composite PNG8:"$6/$2${file_basename%.*}_ore$3.png"
+        magick "$1" "$file" -strip -gravity center -composite PNG8:"$6/$2${file_basename%.*}_ore$3.png"
     done
 }
 
@@ -36,7 +36,7 @@ echo "Copying Java metafiles"
 cp "../src/pack.mcmeta" "./java/pack.mcmeta"
 cp "../src/pack.png" "./java/pack.png"
 
-echo "Copying Java models"
+echo "Copying block models"
 cp ../src/models/* ./java/assets/minecraft/models/block/
 
 echo "Overlaying textures"
@@ -44,8 +44,8 @@ overlay_on "../textures/stones/ore_stone.png" "" "" "coal_deepslate.png" "" "./j
 overlay_on "../textures/stones/deepslate.png" "deepslate_" "" "coal.png" "_deepslate" "./java/assets/minecraft/textures/block/"
 overlay_on "../textures/stones/deepslate_top.png" "deepslate_" "_top" "coal.png" "_deepslate" "./java/assets/minecraft/textures/block/"
 
-echo "Packaging"
-
+echo "Packaging to \"Old.Ores.$version-Java.zip\""
+rm "Old.Ores.$version-Java.zip" 2> /dev/null
 7z a -tzip "Old.Ores.$version-Java.zip" -w ./java/* > /dev/null
 
 echo -e "\n---\nBuilding Bedrock"
@@ -60,10 +60,9 @@ cp "../src/pack_icon.png" "./bedrock/pack_icon.png"
 echo "Overlaying textures"
 overlay_on "../textures/stones/ore_stone.png" "" "" "coal_deepslate.png" "" "./bedrock/textures/blocks/"
 overlay_on "../textures/stones/deepslate.png" "deepslate_" "" "coal.png" "_deepslate" "./bedrock/textures/blocks/deepslate/"
-#overlay_on "../textures/stones/deepslate_top.png" "deepslate_" "_top" "coal.png" "_deepslate" "./java/assets/minecraft/textures/block/"
 
-echo "Packaging"
-
+echo "Packaging to \"Old.Ores.$version-Bedrock.mcpack\""
+rm "Old.Ores.$version-Bedrock.mcpack" 2> /dev/null
 7z a -tzip "Old.Ores.$version-Bedrock.mcpack" -w ./bedrock/* > /dev/null
 
 cd "$currentdir" || exit 1
