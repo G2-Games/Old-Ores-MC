@@ -4,15 +4,15 @@
         "description": "§7The old ore textures\n§6§oCopper made by G2",
         "name": "Old Ores",
         "uuid": "509d7359-84d8-43bd-9260-43c38b1f0013",
-        "version": [2, 1, 3],
-        "min_engine_version": [ 1, 21, 30 ]
+        "version": [2, 1, 4],
+        "min_engine_version": [ 1, 21, 44 ]
     },
     "modules": [
         {
             "description": "§7The old ore textures\n§6§oCopper made by G2",
             "type": "resources",
             "uuid": "471c09f2-d4cc-4c5b-9d44-cc323b491fef",
-            "version": [2, 1, 3]
+            "version": [2, 1, 4]
         }
     ]
 }
