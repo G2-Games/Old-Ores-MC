@@ -1,6 +1,9 @@
 {
     "pack": {
         "pack_format": 42,
-        "description": "§7The old ore textures\n§6§oCopper made by G2"
+        "supported_formats": [7, 75],
+        "min_format": [7, 0],
+        "max_format": [75, 0],
+        "description": "§7The old ore textures\n§6§o"
     }
 }
