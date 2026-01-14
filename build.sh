@@ -1,5 +1,5 @@
 #!/bin/bash
-version="2.1.4"
+version="3.0.0"
 
 # Inputs:
 #   1: Base layer
