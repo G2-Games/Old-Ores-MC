@@ -1,5 +1,5 @@
 #!/bin/bash
-version="2.1.3"
+version="2.1.4"
 
 # Inputs:
 #   1: Base layer
@@ -17,8 +17,23 @@ overlay_on() {
         fi
 
         file_basename=${file_basename//"$5"/}
-        magick "$1" "$file" -strip -gravity center -composite PNG8:"$6/$2${file_basename%.*}_ore$3.png"
+        magick "$1" "$file" -strip -gravity center -composite\
+            -define png:compression-filter=4\
+            -define png:compression-level=9\
+            -define png:compression-strategy=2 PNG8:"$6/$2${file_basename%.*}_ore$3.png"
+
+        pngquant --force --strip --speed 1 --skip-if-larger\
+            --output "$6/$2${file_basename%.*}_ore$3.png"\
+            "$6/$2${file_basename%.*}_ore$3.png"
     done
+}
+
+# Inputs:
+#   1: Input file path
+#   2: Output directory
+compress_json() {
+    file_basename=$(basename "$1")
+    jq -c < "$1" > "$2$file_basename"
 }
 
 currentdir=$(pwd)
@@ -37,7 +52,9 @@ cp "../src/pack.mcmeta" "./java/pack.mcmeta"
 cp "../src/pack.png" "./java/pack.png"
 
 echo "Copying block models"
-cp ../src/models/* ./java/assets/minecraft/models/block/
+for file in ../src/models/*; do
+    compress_json "$file" "./java/assets/minecraft/models/block/"
+done
 
 echo "Overlaying textures"
 overlay_on "../textures/stones/ore_stone.png" "" "" "coal_deepslate.png" "" "./java/assets/minecraft/textures/block/"
@@ -46,7 +63,7 @@ overlay_on "../textures/stones/deepslate_top.png" "deepslate_" "_top" "coal.png"
 
 echo "Packaging to \"Old.Ores.$version-Java.zip\""
 rm "Old.Ores.$version-Java.zip" 2> /dev/null
-7z a -tzip "Old.Ores.$version-Java.zip" -w ./java/* > /dev/null
+7z a -mx9 -tzip "Old.Ores.$version-Java.zip" -w ./java/* > /dev/null
 
 echo -e "\n---\nBuilding Bedrock"
 
